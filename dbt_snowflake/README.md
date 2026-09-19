@@ -1,15 +1,20 @@
-Welcome to your new dbt project!
+# Airbnb dbt Snowflake Project
 
-### Using the starter project
+This directory contains the main dbt Core project assets (models, snapshots, macros, and configurations) for the Airbnb data pipeline on Snowflake.
 
-Try running the following commands:
-- dbt run
-- dbt test
+For complete documentation, architectural diagrams, and setup instructions, please see the [Root README](../README.md).
 
+### Quick Commands
+```bash
+# Test connection
+dbt debug
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+# Run all models
+dbt run
+
+# Run snapshots (SCD Type 2)
+dbt snapshot
+
+# Run full project build
+dbt build
+```
