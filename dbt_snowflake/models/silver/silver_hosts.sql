@@ -1,4 +1,4 @@
-{{ config(materilized = 'incremental', unique_key = 'host_id')}}
+{{ config(materialized = 'incremental', unique_key = 'host_id')}}
 
 SELECT 
     HOST_ID,
